@@ -1,0 +1,48 @@
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Python virtual environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local SQLite databases and runtime chat storage
+*.db
+*.db-shm
+*.db-wal
+chatbot_memory.db*
+conversations_meta.json
+
+# Local user uploads & vector stores
+data/uploads/*
+data/vectorstores/*
+scratch/
+!data/uploads/.gitkeep
+!data/vectorstores/.gitkeep
+
+# IDE and Editor configurations
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
